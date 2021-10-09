@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Brandywine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="sec1">
+            <!-- ----------------------------------------------- header -----------------------------------------------             -->
+            <header>
+                <div class="logo">
+                    <img src="logo.png" alt="main logo">
+                </div>
+                <div class="navbar">
+                    <a href="#sec2">contect <span class="us">us</span> </a>
+                </div>
+            </header>
+            <!-- ------------------------------------------------ content -----------------------------------------------            -->
+            <main>
+                <div class="content">
+                    <div class="subcontent">
+                        <h1> get your favourite<br>
+                            <span class="c">c</span>omic with the <br> best price ? </h1>
+                        <p>we are company that makes and distributes comic books.they stand out because they are high-quality and available is stores worldwide. the goal is give high values our customers <a href="#" class="read">...read more</a> </p>
+                        <div class="btnbox">
+                            <a href="#"><button class="btn buy">Buy Now</button></a>
+                            <a href="#"><button class=" btn demo">More Info.</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------- book -------------------------------------------------- -->
+                <div class="visual">
+                    <div class="subvisual">
+                        <img id="image" class="bookimg" src="manga1.png" alt="book pic">
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="facebook.png" alt="facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="twitter.png" alt="twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="instagram.png" alt="instagram"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+            <!-- ----------------------------------------------- thumb --------------------------------------------------------------------- -->
+            <div class="thumb">
+                <img src="manga1.png" alt="comic book" id="img1" class="book">
+                <img src="manga2.jpg" alt="comic book" id="img2" class="book">
+                <img src="manga3.jpg" alt="comic book" id="img3" class="book">
+            </div>
+            <!-- -------------------------------------------  form  ----------------------------------------------------------------------- -->
+        </section>
+        <section id="sec2" class="sec2">
+            <div class="formbox">
+                <h2>contect us</h2>
+                <form action="" method="get">
+                    <label for="">Name</label> <br> <input type="text" name="name" id="name">
+                    <br>
+                    <label for="">Email</label> <br> <input type="email" name="email" id="email">
+                    <br>
+                    <label for="">massage</label> <br> <textarea name="msg" id="msg" cols="30" rows="5"></textarea>
+                    <br>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.getElementById("img1").onclick = btn1;
+
+        function btn1() {
+            var a = document.getElementById("img1").src;
+            document.getElementById("image").src = a;
+
+        }
+
+        document.getElementById("img2").onclick = btn2;
+
+        function btn2() {
+            var a = document.getElementById("img2").src;
+            document.getElementById("image").src = a;
+
+        }
+
+        document.getElementById("img3").onclick = btn3;
+
+        function btn3() {
+            var a = document.getElementById("img3").src;
+            document.getElementById("image").src = a;
+
+        }
+    </script>
+</body>
+
+
+</html>
